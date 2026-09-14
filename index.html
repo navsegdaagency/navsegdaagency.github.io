@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>КП · НАВСЕГДА</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0e0b09;--fg:#f0e6d4;--muted:#a89a83;--accent:#c9a15a;--accent-b:#e7c87e;--bordo:#5e0b12;--line:rgba(201,161,90,.22)}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased;padding:0 24px 80px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto}
+header{padding:70px 0 30px;text-align:center}
+.logo{color:var(--accent-b);display:inline-block;width:200px}.logo svg{width:100%;height:auto;display:block}
+h1{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.8rem,4.4vw,2.8rem);margin-top:22px}
+.sub{font-family:'Oswald',sans-serif;font-weight:300;font-size:.7rem;letter-spacing:.4em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.line{width:60px;height:1px;background:var(--accent);margin:22px auto 0}
+.groups{margin-top:60px}
+.group{margin-bottom:56px}
+.gt{font-family:'Oswald',sans-serif;font-weight:400;font-size:.7rem;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:22px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px}
+.card{position:relative;display:block;border:1px solid var(--line);border-radius:14px;overflow:hidden;background:#171310;transition:transform .35s ease,box-shadow .35s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 20px 40px rgba(0,0,0,.4);border-color:var(--accent)}
+.thumb{position:relative;aspect-ratio:16/10;overflow:hidden;background:#000}
+.thumb img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.card:hover .thumb img{transform:scale(1.06)}
+.thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 45%,rgba(10,8,7,.85))}
+.tag{position:absolute;top:12px;left:12px;z-index:2;font-family:'Oswald',sans-serif;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:#fff;background:rgba(94,11,18,.85);padding:6px 10px;border-radius:20px}
+.body{padding:18px 20px 22px}
+.body h3{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:1.35rem;line-height:1.2;margin-bottom:6px}
+.venue{font-family:'Oswald',sans-serif;font-weight:300;font-size:.66rem;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.row{display:flex;justify-content:space-between;align-items:baseline;margin-top:14px;gap:10px}
+.total{font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.15rem;color:var(--accent-b)}
+.total small{display:block;font-family:'Oswald',sans-serif;font-weight:300;font-size:.55rem;letter-spacing:.24em;color:var(--muted);text-transform:uppercase;margin-bottom:2px}
+.date{font-family:'Oswald',sans-serif;font-weight:300;font-size:.7rem;letter-spacing:.14em;color:var(--muted)}
+footer{margin-top:80px;padding-top:40px;border-top:1px solid var(--line);text-align:center;color:var(--muted);font-size:.85rem;line-height:2}
+footer a{color:var(--accent-b)}
+.search{max-width:520px;margin:34px auto 0;position:relative}
+.search input{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:60px;padding:16px 22px 16px 50px;color:var(--fg);font-family:'Montserrat',sans-serif;font-size:.95rem;outline:none;transition:.3s}
+.search input::placeholder{color:var(--muted);font-weight:300}
+.search input:focus{border-color:var(--accent);background:rgba(255,255,255,.07)}
+.search svg{position:absolute;left:20px;top:50%;transform:translateY(-50%);width:18px;height:18px;color:var(--muted);pointer-events:none}
+.empty{text-align:center;color:var(--muted);font-style:italic;padding:30px 0;display:none}
+.group.hidden,.card.hidden{display:none}
+@media(max-width:520px){header{padding:44px 0 20px}.grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <div class="logo" id="logo"></div>
+  <h1>Актуальные предложения</h1>
+  <div class="sub">Свадебное агентство · НАВСЕГДА</div>
+  <div class="line"></div>
+  <div class="search">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+    <input id="q" type="search" placeholder="Найти пару, площадку или дату…" autocomplete="off" spellcheck="false">
+  </div>
+</header>
+<div class="empty" id="empty">По запросу ничего не найдено</div>
+<div class="groups" id="groups">
+
+<div class="group">
+  <div class="gt">Илья и Кристина · 22.07.2027 · 4 варианта</div>
+  <div class="grid">
+    <a class="card" href="spark/"><div class="thumb"><span class="tag">Мафия → Электро</span><img src="spark/img/1.jpg" alt=""></div><div class="body"><h3>Spark Hall</h3><div class="venue">Стеклянный павильон в лесу</div><div class="row"><div class="date">суббота 22.07.2027</div><div class="total"><small>Итого</small>2 447 273 ₽</div></div></div></a>
+    <a class="card" href="les/"><div class="thumb"><span class="tag">Мафия → Электро</span><img src="les/img/1.jpg" alt=""></div><div class="body"><h3>Лес Ивент</h3><div class="venue">Загородный зал у леса</div><div class="row"><div class="date">четверг 22.07.2027</div><div class="total"><small>Итого</small>2 251 635 ₽</div></div></div></a>
+    <a class="card" href="pushkin/"><div class="thumb"><span class="tag">Мафия → Электро</span><img src="pushkin/img/1.jpg" alt=""></div><div class="body"><h3>Пушкинъ</h3><div class="venue">Стеклянная оранжерея · Гребнево</div><div class="row"><div class="date">суббота 10.07.2027</div><div class="total"><small>Итого</small>2 089 298 ₽</div></div></div></a>
+    <a class="card" href="crystal/"><div class="thumb"><span class="tag">Мафия → Электро</span><img src="crystal/img/1.jpg" alt=""></div><div class="body"><h3>Crystal Garden</h3><div class="venue">Коломенское</div><div class="row"><div class="date">суббота июль 2027</div><div class="total"><small>Итого</small>2 279 385 ₽</div></div></div></a>
+  </div>
+</div>
+
+<div class="group">
+  <div class="gt">Другие пары</div>
+  <div class="grid">
+    <a class="card" href="sherwood/"><div class="thumb"><span class="tag">Лунный лес</span><img src="sherwood/img/1.jpg" alt=""></div><div class="body"><h3>Никита и Селена</h3><div class="venue">Шервуд · камерная свадьба</div><div class="row"><div class="date">июль 2027 · 45 гостей</div><div class="total"><small>Итого</small>976 523 ₽</div></div></div></a>
+    <a class="card" href="rodina/"><div class="thumb"><span class="tag">Пастель у воды</span><img src="rodina/img/1.jpg" alt=""></div><div class="body"><h3>Дмитрий и Ксения</h3><div class="venue">Ресторан «Родина»</div><div class="row"><div class="date">14.06.2027 · 38 гостей</div><div class="total"><small>Итого</small>1 140 359 ₽</div></div></div></a>
+    <a class="card" href="shamil-fatima/"><div class="thumb"><span class="tag">Дагестанская · Своя кухня</span><img src="shamil-fatima/img/1.jpg" alt=""></div><div class="body"><h3>Шамиль и Фатима</h3><div class="venue">Банкетный зал «Текстильщики»</div><div class="row"><div class="date">27.07.2027 · 200 гостей</div><div class="total"><small>Итого</small>3 185 700 ₽</div></div></div></a>
+    <a class="card" href="nikita-alena/"><div class="thumb"><span class="tag">А-ля рус · вариант 1</span><img src="nikita-alena/img/1.jpg" alt=""></div><div class="body"><h3>Никита и Алёна</h3><div class="venue">Терем-оранжерея · юг Москвы</div><div class="row"><div class="date">29.08.2027 · 60 гостей</div><div class="total"><small>Итого</small>1 449 660 ₽</div></div></div></a>
+    <a class="card" href="nikita-alena-koko/"><div class="thumb"><span class="tag">Оранжерея в лесу · вариант 2</span><img src="nikita-alena-koko/img/1.jpg" alt=""></div><div class="body"><h3>Никита и Алёна · альтернатива</h3><div class="venue">Стеклянная оранжерея с глициниями</div><div class="row"><div class="date">29.08.2027 · 60 гостей</div><div class="total"><small>Итого</small>1 764 345 ₽</div></div></div></a>
+  </div>
+</div>
+
+<div class="group">
+  <div class="gt">Корпоративные / бренд-события</div>
+  <div class="grid">
+    <a class="card" href="ayvazzovsky/"><div class="thumb"><span class="tag">Бренд-вечер</span><img src="ayvazzovsky/img/1.jpg" alt=""></div><div class="body"><h3>AYVAZZOVSKY Studio</h3><div class="venue">Вечер в тёплой палитре студии</div><div class="row"><div class="date">4 часа · 150 гостей</div><div class="total"><small>Итого</small>456 000 ₽</div></div></div></a>
+  </div>
+</div>
+
+<div class="group">
+  <div class="gt">Юбилей</div>
+  <div class="grid">
+    <a class="card" href="dmitriy-bday/"><div class="thumb"><span class="tag">Виски &amp; сигары</span><img src="dmitriy-bday/img/1.jpg" alt=""></div><div class="body"><h3>Дмитрий · 45 лет</h3><div class="venue">Exit Loft · крыша в центре</div><div class="row"><div class="date">24.10.2026 · 20–30 гостей</div><div class="total"><small>Итого</small>678 155 ₽</div></div></div></a>
+  </div>
+</div>
+
+</div>
+<footer>
+  Свадебное агентство НАВСЕГДА · Денис Коняев<br>
+  <a href="tel:+79801821101">+7 (980) 182-11-01</a> · <a href="mailto:kreativedreamz1@gmail.com">kreativedreamz1@gmail.com</a>
+</footer>
+</div>
+<script>
+fetch('_assets/logo-navsegda.svg').then(r=>r.text()).then(s=>{document.getElementById('logo').innerHTML=s.replace(/fill="#FFE7C6"/g,'fill="currentColor"');});
+(function(){
+  const q=document.getElementById('q'), groups=document.getElementById('groups'), empty=document.getElementById('empty');
+  const cards=[...groups.querySelectorAll('.card')];
+  const gs=[...groups.querySelectorAll('.group')];
+  const norm=s=>s.toLowerCase().replace(/ё/g,'е').replace(/[«»„"]/g,'').replace(/\s+/g,' ').trim();
+  cards.forEach(c=>{c.dataset.txt=norm(c.textContent+' '+(c.querySelector('.gt')?.textContent||''));});
+  gs.forEach(g=>{const gt=norm(g.querySelector('.gt')?.textContent||'');g.querySelectorAll('.card').forEach(c=>c.dataset.txt+=' '+gt)});
+  function filter(){
+    const v=norm(q.value);
+    if(!v){cards.forEach(c=>c.classList.remove('hidden'));gs.forEach(g=>g.classList.remove('hidden'));empty.style.display='none';return;}
+    const tokens=v.split(' ').filter(Boolean);
+    let any=false;
+    cards.forEach(c=>{const ok=tokens.every(t=>c.dataset.txt.includes(t));c.classList.toggle('hidden',!ok);if(ok)any=true;});
+    gs.forEach(g=>{const has=[...g.querySelectorAll('.card')].some(c=>!c.classList.contains('hidden'));g.classList.toggle('hidden',!has);});
+    empty.style.display=any?'none':'block';
+  }
+  q.addEventListener('input',filter);
+})();
+</script>
+</body>
+</html>

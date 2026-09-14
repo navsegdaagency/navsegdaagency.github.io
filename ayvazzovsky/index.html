@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Вечер в AYVAZZOVSKY STUDIO | НАВСЕГДА</title>
+<meta name="description" content="Коммерческое предложение НАВСЕГДА для AYVAZZOVSKY STUDIO — вечер в тёплой палитре студии.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+--bg:#f4ebdd;      /* кремовая база */
+--bg-2:#eadfcc;
+--fg:#2b2620;      /* глубокий уголь */
+--muted:#8b7d68;   /* тёплый серо-бежевый */
+--oak:#c9a47e;     /* дуб */
+--brass:#b8946a;   /* латунь */
+--brass-d:#8f6e46;
+--paper:#faf3e5;
+--line:rgba(43,38,32,.12);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Manrope',sans-serif;background:var(--bg);color:var(--fg);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased;font-weight:300}
+h1,h2,h3,h4{font-family:'Cormorant Garamond',serif;font-weight:500;line-height:1.1;letter-spacing:.005em}
+.wrap{max-width:1120px;margin:0 auto;padding:0 28px}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+
+/* ---- topbar ---- */
+.topbar{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:20px 28px;background:linear-gradient(rgba(244,235,221,.9),transparent);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.brandlogo{color:var(--brass-d)}.brandlogo svg{height:16px;width:auto;display:block}
+.tbtag{font-family:'Manrope',sans-serif;font-weight:300;font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+
+/* ---- HERO ---- */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url("img/1.jpg") center/cover no-repeat}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(244,235,221,.35),rgba(244,235,221,.12) 40%,rgba(244,235,221,.85))}
+.hero-inner{position:relative;z-index:3;padding:180px 20px 100px;max-width:920px}
+.hero-marker{font-family:'Manrope',sans-serif;font-weight:300;font-size:.62rem;letter-spacing:.5em;text-transform:uppercase;color:var(--brass-d);margin-bottom:24px}
+.hero-marker::before,.hero-marker::after{content:"";display:inline-block;width:26px;height:1px;background:var(--brass-d);vertical-align:middle;margin:0 14px}
+.wordmark{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(2.6rem,7vw,4.6rem);letter-spacing:.32em;padding-left:.32em;color:var(--fg);line-height:1}
+.wordmark small{display:block;font-size:.24em;letter-spacing:.6em;padding-left:.6em;color:var(--brass-d);font-weight:400;margin-top:14px}
+.hero-tag{margin-top:44px;font-family:'Cormorant Garamond',serif;font-style:italic;font-weight:400;font-size:clamp(1.2rem,2.6vw,1.7rem);color:var(--fg);opacity:.85;max-width:640px;margin-left:auto;margin-right:auto}
+.hero-meta{margin-top:36px;font-family:'Manrope',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.arch{position:absolute;left:50%;bottom:-60px;transform:translateX(-50%);width:min(340px,72vw);height:min(500px,100vw);z-index:2;pointer-events:none;
+  border:1px solid rgba(184,148,106,.35);border-radius:50% 50% 0 0/50% 50% 0 0}
+
+/* ---- sections ---- */
+section{position:relative;z-index:3;padding:120px 0}
+.eyebrow{font-family:'Manrope',sans-serif;font-weight:300;font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--brass-d);text-align:center;margin-bottom:18px}
+.stitle{font-size:clamp(2rem,5.4vw,3.2rem);text-align:center;color:var(--fg);font-weight:500}
+.sdiv{display:block;width:60px;height:1px;background:var(--brass-d);margin:26px auto 0;opacity:.6}
+.lead{max-width:680px;margin:32px auto 0;text-align:center;font-size:1rem;color:var(--muted);font-weight:300;line-height:1.8}
+
+/* ---- gallery ---- */
+.gal{margin-top:64px;display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.gal figure{position:relative;overflow:hidden;border-radius:2px;cursor:pointer;background:var(--oak)}
+.gal figure::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.5);pointer-events:none}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease,filter .8s}
+.gal figure:hover img{transform:scale(1.05);filter:brightness(1.03)}
+.gal .big{grid-column:span 2;grid-row:span 2}
+.gal .wide{grid-column:span 2}
+@media(max-width:900px){.gal{grid-template-columns:repeat(2,1fr);grid-auto-rows:160px}.gal .big{grid-column:span 2;grid-row:span 2}}
+@media(max-width:420px){.gal{grid-template-columns:1fr 1fr;grid-auto-rows:130px}}
+
+/* ---- feature trio ---- */
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:60px}
+.tcard{border:1px solid var(--line);border-radius:2px;padding:38px 32px;background:var(--paper);text-align:left}
+.tcard .rn{font-family:'Manrope',sans-serif;font-size:.58rem;letter-spacing:.36em;text-transform:uppercase;color:var(--brass-d);margin-bottom:20px}
+.tcard h3{font-size:1.5rem;color:var(--fg);margin-bottom:12px}
+.tcard p{font-size:.9rem;color:var(--muted);font-weight:300}
+@media(max-width:768px){.trio{grid-template-columns:1fr}}
+
+/* ---- estimate ---- */
+.est{margin-top:52px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.est table{width:100%;border-collapse:collapse;font-size:.95rem}
+.est thead th{font-family:'Manrope',sans-serif;font-weight:300;font-size:.58rem;letter-spacing:.36em;text-transform:uppercase;color:var(--muted);text-align:left;padding:18px 16px;border-bottom:1px solid var(--line)}
+.est thead th:last-child{text-align:right}
+.rs td{padding:22px 16px 12px;font-family:'Cormorant Garamond',serif;font-size:1.35rem;font-weight:500;color:var(--brass-d);border-bottom:none;letter-spacing:.02em}
+.ri td{padding:14px 16px;border-bottom:1px solid var(--line);vertical-align:baseline;color:var(--fg);font-weight:300}
+.ri .n{font-family:'Manrope',sans-serif;font-weight:500;color:var(--brass-d);width:32px;font-size:.85rem}
+.ri .nm{font-weight:400;font-size:.95rem}
+.ri .cl{color:var(--muted);font-size:.82rem;white-space:nowrap;padding-right:8px}
+.ri .pr{text-align:right;font-weight:500;color:var(--fg);white-space:nowrap;font-variant-numeric:tabular-nums;font-size:.95rem}
+.rsub td{padding:16px 16px;border-bottom:1px solid var(--line);font-family:'Manrope',sans-serif;font-size:.62rem;letter-spacing:.32em;text-transform:uppercase;color:var(--muted);font-weight:500}
+.rsub .pr{text-align:right;color:var(--brass-d);letter-spacing:0;font-family:'Manrope',sans-serif;font-size:.95rem;font-variant-numeric:tabular-nums}
+.rtot td{padding:28px 16px;background:transparent;font-family:'Cormorant Garamond',serif;font-size:1.8rem;font-weight:500;color:var(--fg);border-top:2px solid var(--brass-d);border-bottom:none}
+.rtot .pr{text-align:right;color:var(--brass-d);font-variant-numeric:tabular-nums}
+.hint{display:inline-block;margin-left:8px;padding:2px 8px;font-family:'Manrope',sans-serif;font-weight:400;font-size:.6rem;letter-spacing:.2em;text-transform:uppercase;color:var(--brass-d);border:1px solid var(--brass-d);border-radius:20px;vertical-align:middle}
+.note{margin-top:26px;font-size:.82rem;color:var(--muted);font-style:italic;font-weight:300;padding:0 4px;text-align:center}
+
+/* ---- footer ---- */
+footer{position:relative;z-index:3;margin-top:60px;padding:100px 24px 60px;text-align:center;background:var(--bg-2);border-top:1px solid var(--line)}
+.footer-logo{color:var(--brass-d);width:160px;margin:0 auto 22px}.footer-logo svg{width:100%;height:auto}
+.fl{width:44px;height:1px;background:var(--brass-d);margin:22px auto}
+.fc{font-size:.9rem;color:var(--fg);line-height:2;font-weight:300}.fc a{color:var(--brass-d);border-bottom:1px solid rgba(184,148,106,.4)}
+.fnote{margin-top:28px;font-size:.62rem;color:var(--muted);letter-spacing:.24em;text-transform:uppercase}
+
+/* ---- lightbox ---- */
+.lb{position:fixed;inset:0;z-index:100;background:rgba(43,38,32,.94);display:none;align-items:center;justify-content:center}
+.lb.open{display:flex}
+.lb img{max-width:92vw;max-height:86vh}
+.lb .x{position:absolute;top:22px;right:28px;font-size:2rem;color:var(--bg);cursor:pointer;line-height:1}
+.lb .nav{position:absolute;top:50%;transform:translateY(-50%);font-size:2.6rem;color:var(--bg);cursor:pointer;padding:0 24px;opacity:.7;user-select:none;font-family:'Cormorant Garamond',serif}
+.lb .nav:hover{opacity:1;color:var(--oak)}
+.lb .prev{left:0}.lb .next{right:0}
+.lb .cnt{position:absolute;bottom:28px;left:50%;transform:translateX(-50%);font-family:'Manrope',sans-serif;font-size:.66rem;letter-spacing:.36em;color:var(--muted)}
+
+.rev{opacity:0;transform:translateY(24px);transition:opacity 1s ease,transform 1s ease}.rev.in{opacity:1;transform:none}
+@media(max-width:768px){section{padding:80px 0}.est thead th:nth-child(3),.ri .cl{display:none}.rtot td{font-size:1.4rem}}
+@media(max-width:420px){.wrap{padding:0 20px}.wordmark{letter-spacing:.22em;padding-left:.22em}.hero-inner{padding-top:150px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* нал/безнал */
+.pay-note{margin-top:24px;padding:20px 26px;border:1px solid var(--line);border-radius:14px;background:linear-gradient(135deg,rgba(160,120,60,.08),transparent);display:flex;gap:32px;flex-wrap:wrap;align-items:center;font-size:.94rem}
+.pay-note b{color:var(--accent);margin-right:8px}
+.pay-note span{color:var(--muted);font-size:.86em}
+@media(max-width:600px){.pay-note{flex-direction:column;align-items:flex-start;gap:10px}}
+/* тайминг вечера */
+.tl-list{max-width:760px;margin:52px auto 0;position:relative;padding-left:36px}
+.tl-list::before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--accent),var(--accent2));border-radius:2px;opacity:.6}
+.tl-row{position:relative;padding:0 0 28px 22px}
+.tl-row::before{content:"";position:absolute;left:-32px;top:3px;width:18px;height:18px;border-radius:50%;background:var(--bg);border:2px solid var(--accent);box-shadow:0 0 0 4px rgba(160,120,60,.1)}
+.tl-row.pause::before{border-color:var(--muted)}
+.tl-row .t{font-family:'Oswald',sans-serif;font-size:.72rem;letter-spacing:.24em;color:var(--accent);text-transform:uppercase}
+.tl-row.pause .t{color:var(--muted)}
+.tl-row h4{font-size:1.28rem;color:var(--fg);margin:3px 0 4px;font-family:'Cormorant Garamond',serif;font-weight:500}
+.tl-row p{font-size:.88rem;color:var(--muted);font-weight:300;line-height:1.55}
+/* раскрывающаяся внутренняя смета */
+.ri.exp{cursor:pointer;user-select:none}
+.ri.exp .chev{display:inline-block;transition:transform .3s;color:var(--accent);margin-left:6px;font-size:.9em}
+.ri.exp.open .chev{transform:rotate(180deg)}
+.sub-wrap>td{padding:0!important;border:0!important;background:transparent!important}
+.sub-inner{max-height:0;overflow:hidden;transition:max-height .5s ease;background:rgba(0,0,0,.03);border-radius:0}
+.sub-wrap.open .sub-inner{max-height:900px}
+.sub-inner>.sub-title{font-family:'Oswald',sans-serif;font-size:.62rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);padding:16px 24px 8px}
+.sub-table{width:100%;border-collapse:collapse;font-size:.85rem}
+.sub-table td{padding:9px 24px;border-bottom:1px solid var(--line);vertical-align:top}
+.sub-table td:first-child{width:auto}
+.sub-table td.c{color:var(--muted);font-size:.78rem;white-space:nowrap;text-align:right;width:1%}
+.sub-table td.p{text-align:right;white-space:nowrap;font-weight:500;color:var(--fg);width:1%}
+.sub-table .sub-sec td{font-family:'Oswald',sans-serif;font-size:.6rem;letter-spacing:.24em;text-transform:uppercase;color:var(--accent);padding-top:14px}
+.sub-table .sub-sub td{font-family:'Oswald',sans-serif;font-size:.62rem;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);background:rgba(0,0,0,.02)}
+.sub-table .sub-tot td{font-family:'Cormorant Garamond',serif;font-size:1.05rem;font-weight:600;color:var(--fg);background:rgba(0,0,0,.05);padding:14px 24px}
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="brandlogo" id="tb"></div>
+  <div class="tbtag">НАВСЕГДА · для AYVAZZOVSKY STUDIO</div>
+</div>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="arch"></div>
+  <div class="hero-inner">
+    <div class="hero-marker">Коммерческое предложение</div>
+    <div class="wordmark">AYVAZZOVSKY<small>studio</small></div>
+    <div class="hero-tag">Тёплый вечер в интерьере студии —<br>ведущий, диджей и фуршет-шведский стол.</div>
+    <div class="hero-meta">4 часа программы · 150 гостей · под ключ</div>
+  </div>
+</header>
+
+<!-- CONCEPT -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Концепция</div>
+  <h2 class="stitle rev">Вечер в тёплой палитре студии</h2>
+  <span class="sdiv"></span>
+  <p class="lead rev">Мы сохраняем язык интерьера AYVAZZOVSKY — светлый дуб, латунь, кремовые бархаты и арки — и настраиваем на этой сцене живой вечер: фуршет-шведский стол на 150 гостей, набор для Polaroid со стеной пожеланий, ведущий с интерактивами и диджей. Ничего лишнего — только атмосфера, свет и звук.</p>
+  <div class="trio">
+    <div class="tcard rev"><div class="rn">01 · Welcome</div><h3>Свет и коктейль</h3><p>Гости приезжают в тёплый свет, встречает бармен с авторской картой на 300 позиций. Polaroid и альбом пожеланий на входе.</p></div>
+    <div class="tcard rev"><div class="rn">02 · Программа</div><h3>Ведущий и диджей</h3><p>4 часа с ведущим — интерактивы, тосты и активности. Диджей ведёт вечер плотным сетом, плазма 55″ для контента и фото.</p></div>
+    <div class="tcard rev"><div class="rn">03 · Финал</div><h3>Танцы и снимки</h3><p>Постепенный переход в танцевальную часть, Polaroid остаётся до конца — гости уходят с личным кадром на память.</p></div>
+  </div>
+</div></section>
+
+<!-- GALLERY -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Пространство</div>
+  <h2 class="stitle rev">Референсы студии</h2>
+  <span class="sdiv"></span>
+  <div class="gal" id="gal">
+    <figure class="big"><img src="img/1.jpg" alt="Студия"></figure>
+    <figure><img src="img/2.jpg" alt="Интерьер"></figure>
+    <figure><img src="img/3.jpg" alt="Интерьер"></figure>
+    <figure class="wide"><img src="img/4.jpg" alt="Зона welcome"></figure>
+    <figure><img src="img/5.jpg" alt="Зал"></figure>
+    <figure><img src="img/6.jpg" alt="Деталь"></figure>
+    <figure class="wide"><img src="img/7.jpg" alt="Атмосфера"></figure>
+    <figure class="wide"><img src="img/8.jpg" alt="Ресепшн"></figure>
+  </div>
+</div></section>
+
+<!-- TIMING -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Программа вечера</div>
+  <h2 class="stitle rev">Тайминг · 18:00 — 22:00</h2>
+  <div class="tl-list">
+    <div class="tl-row rev"><div class="t">18:00 — 18:40 · Welcome</div><h4>Встреча гостей</h4><p>Гости приезжают, знакомятся с пространством, welcome-музыка от диджея, Polaroid и альбом с пожеланиями, фуршет открыт.</p></div>
+    <div class="tl-row rev"><div class="t">18:40 — 18:50 · Открытие</div><h4>Приветственное слово Арарата</h4><p>Хозяин студии открывает вечер, задаёт настрой и представляет команду.</p></div>
+    <div class="tl-row rev"><div class="t">18:50 — 19:20 · Блок 1</div><h4>Интерактив «Знакомство через образ»</h4><p>Ведущий разбивает гостей на пары и мини-команды через beauty-квиз о студии, ароматах и стиле — быстро включает и знакомит всех между собой.</p></div>
+    <div class="tl-row rev"><div class="t">19:20 — 20:20 · Диджей + фуршет</div><h4>Основной сет диджея</h4><p>Фоновая часть вечера — плотный сет диджея под фуршет. Гости общаются, пробуют меню, крутится контент на плазме 55″.</p></div>
+    <div class="tl-row rev"><div class="t">20:20 — 20:50 · Блок 2</div><h4>Ведущий: тосты и активность</h4><p>Тёплые слова, поздравления, интерактивная активность с гостями, обыгрыш фотозоны, розыгрыш подарков.</p></div>
+    <div class="tl-row rev"><div class="t">20:50 — 22:00 · Финал</div><h4>Танцевальный сет диджея</h4><p>Клубная часть вечера — энергичный сет до финала, плотный ритм и танцпол.</p></div>
+  </div>
+</div></section>
+
+<!-- ESTIMATE -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Смета</div>
+  <h2 class="stitle rev">Что входит в вечер</h2>
+  <span class="sdiv"></span>
+  <div class="est rev"><table>
+    <thead><tr><th>№</th><th>Позиция</th><th>Расчёт</th><th>Стоимость</th></tr></thead>
+    <tbody>
+      <tr class="rs"><td colspan="4">Программа</td></tr>
+      <tr class="ri"><td class="n">1</td><td class="nm">Ведущий с программой</td><td class="cl">4 часа</td><td class="pr">40 000 ₽</td></tr>
+      <tr class="ri"><td class="n">2</td><td class="nm">Диджей</td><td class="cl">6 000 × 4 ч</td><td class="pr">24 000 ₽</td></tr>
+      <tr class="rsub"><td colspan="3">Итого программа</td><td class="pr">64 000 ₽</td></tr>
+
+      <tr class="rs"><td colspan="4">Техника</td></tr>
+      <tr class="ri"><td class="n">3</td><td class="nm">Звуковое оборудование</td><td class="cl">комплект</td><td class="pr">40 000 ₽</td></tr>
+      <tr class="ri"><td class="n">4</td><td class="nm">Технический специалист по звуку</td><td class="cl">1 чел.</td><td class="pr">17 500 ₽</td></tr>
+      <tr class="ri"><td class="n">5</td><td class="nm">Экран-плазма 55″</td><td class="cl">комплект</td><td class="pr">10 000 ₽</td></tr>
+      <tr class="rsub"><td colspan="3">Итого техника</td><td class="pr">67 500 ₽</td></tr>
+
+      <tr class="rs"><td colspan="4">Фотозона</td></tr>
+      <tr class="ri exp" data-target="fotozone"><td class="n">6</td><td class="nm">Фотозона (декор под ключ) <span class="chev">▾</span></td><td class="cl">под ключ</td><td class="pr">114 000 ₽</td></tr>
+      <tr class="sub-wrap" id="fotozone"><td colspan="4">
+        <div class="sub-inner">
+          <div class="sub-title">Внутренняя разбивка фотозоны</div>
+          <table class="sub-table">
+            <tbody>
+              <tr class="sub-sec"><td colspan="4">Материалы и декор</td></tr>
+              <tr><td>Панели из пенокартона на каркасе</td><td class="c">1 × 26 000</td><td class="p">26 000 ₽</td></tr>
+              <tr><td>Наклейки на пенокартон с накаткой (заглавные буквы)</td><td class="c">1 × 15 000</td><td class="p">15 000 ₽</td></tr>
+              <tr><td>Гирлянда из шаров разных размеров (глянец)</td><td class="c">1 × 30 000</td><td class="p">30 000 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого материалы</td><td class="p">71 000 ₽</td></tr>
+              <tr class="sub-sec"><td colspan="4">Работа и логистика</td></tr>
+              <tr><td>Аэродизайнер</td><td class="c">1 чел.</td><td class="p">16 000 ₽</td></tr>
+              <tr><td>Монтажник</td><td class="c">1 чел.</td><td class="p">16 000 ₽</td></tr>
+              <tr><td>Логистические услуги</td><td class="c">комплект</td><td class="p">11 000 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого работа и логистика</td><td class="p">43 000 ₽</td></tr>
+              <tr class="sub-tot"><td colspan="2">ВСЕГО фотозона</td><td class="p">114 000 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </td></tr>
+      <tr class="rsub"><td colspan="3">Итого фотозона</td><td class="pr">114 000 ₽</td></tr>
+
+      <tr class="rs"><td colspan="4">Питание · фуршет на 150 гостей</td></tr>
+      <tr class="ri exp" data-target="menu"><td class="n">7</td><td class="nm">Фуршет (закуски, канапе, салаты, горячие) <span class="chev">▾</span></td><td class="cl">150 гостей · ~283 г/чел</td><td class="pr">153 000 ₽</td></tr>
+      <tr class="sub-wrap" id="menu"><td colspan="4">
+        <div class="sub-inner">
+          <div class="sub-title">Меню · раскладка по позициям</div>
+          <table class="sub-table">
+            <tbody>
+              <tr class="sub-sec"><td colspan="4">Брускетты · 5 видов, 137 шт (~40 г/чел)</td></tr>
+              <tr><td>Брускетта с салями</td><td class="c">25 × 240</td><td class="p">6 000 ₽</td></tr>
+              <tr><td>Брускетта с ростбифом</td><td class="c">25 × 315</td><td class="p">7 875 ₽</td></tr>
+              <tr><td>Брускетта с моцареллой и вялеными томатами</td><td class="c">25 × 265</td><td class="p">6 625 ₽</td></tr>
+              <tr><td>Брускетта с тартаром из лосося</td><td class="c">25 × 330</td><td class="p">8 250 ₽</td></tr>
+              <tr><td>Брускетта с овощами гриль</td><td class="c">37 × 270</td><td class="p">9 990 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого брускетты</td><td class="p">38 740 ₽</td></tr>
+
+              <tr class="sub-sec"><td colspan="4">Канапе · 5 видов, 125 шт (~37 г/чел)</td></tr>
+              <tr><td>Рулетики из баклажанов</td><td class="c">25 × 240</td><td class="p">6 000 ₽</td></tr>
+              <tr><td>Канапе с креветкой</td><td class="c">25 × 300</td><td class="p">7 500 ₽</td></tr>
+              <tr><td>Канапе «Камамбер» с клубникой</td><td class="c">25 × 290</td><td class="p">7 250 ₽</td></tr>
+              <tr><td>Рулетики в лаваше с ветчиной и сыром</td><td class="c">25 × 240</td><td class="p">6 000 ₽</td></tr>
+              <tr><td>Канапе «Капрезе»</td><td class="c">25 × 230</td><td class="p">5 750 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого канапе</td><td class="p">32 500 ₽</td></tr>
+
+              <tr class="sub-sec"><td colspan="4">Салаты · 4 вида, 80 порций (~68 г/чел)</td></tr>
+              <tr><td>«Цезарь» с курицей</td><td class="c">20 × 330</td><td class="p">6 600 ₽</td></tr>
+              <tr><td>Греческий</td><td class="c">20 × 325</td><td class="p">6 500 ₽</td></tr>
+              <tr><td>«Оливье» с курицей</td><td class="c">20 × 280</td><td class="p">5 600 ₽</td></tr>
+              <tr><td>«Нисуаз»</td><td class="c">20 × 300</td><td class="p">6 000 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого салаты</td><td class="p">24 700 ₽</td></tr>
+
+              <tr class="sub-sec"><td colspan="4">Горячие закуски · 2 вида, 80 порций (80 г/чел)</td></tr>
+              <tr><td>Шашлычок из курицы</td><td class="c">40 × 555</td><td class="p">22 200 ₽</td></tr>
+              <tr><td>Шашлычок из свинины</td><td class="c">40 × 559</td><td class="p">22 360 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого горячие</td><td class="p">44 560 ₽</td></tr>
+
+              <tr class="sub-sec"><td colspan="4">Гарниры · 2 вида, 50 порций (60 г/чел)</td></tr>
+              <tr><td>Картофель «Черри» запечённый</td><td class="c">25 × 200</td><td class="p">5 000 ₽</td></tr>
+              <tr><td>Овощи-гриль с грибами</td><td class="c">25 × 300</td><td class="p">7 500 ₽</td></tr>
+              <tr class="sub-sub"><td colspan="2">Итого гарниры</td><td class="p">12 500 ₽</td></tr>
+
+              <tr class="sub-tot"><td colspan="2">ВСЕГО меню</td><td class="p">153 000 ₽</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </td></tr>
+      <tr class="rsub"><td colspan="3">Итого питание</td><td class="pr">153 000 ₽</td></tr>
+
+      <tr class="rs"><td colspan="4">Активации</td></tr>
+      <tr class="ri"><td class="n">8</td><td class="nm">Polaroid (100 картриджей) + альбом с пожеланиями</td><td class="cl">комплект</td><td class="pr">17 500 ₽</td></tr>
+      <tr class="rsub"><td colspan="3">Итого активации</td><td class="pr">17 500 ₽</td></tr>
+
+      <tr class="rs"><td colspan="4">Организация</td></tr>
+      <tr class="ri"><td class="n">9</td><td class="nm">Подбор подрядчиков + контроль</td><td class="cl">агентство</td><td class="pr">40 000 ₽</td></tr>
+      <tr class="rsub"><td colspan="3">Итого организация</td><td class="pr">40 000 ₽</td></tr>
+
+      <tr class="rtot"><td colspan="3">ИТОГО (за наличный расчёт)</td><td class="pr">456 000 ₽</td></tr>
+    </tbody>
+  </table></div>
+  <div class="pay-note rev">
+    <div><b>Наличный расчёт</b> — 456 000 ₽</div>
+    <div><b>Безналичный расчёт</b> — 501 600 ₽ <span>(+10%)</span></div>
+  </div>
+  <p class="note">Смета покрывает весь вечер под ключ. Ниже — опции, которые естественно ложатся на эстетику студии и усиливают вечер.</p>
+</div></section>
+
+<!-- OPTIONS -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Опции</div>
+  <h2 class="stitle rev">Уместные усиления вечера</h2>
+  <span class="sdiv"></span>
+  <div class="est rev"><table>
+    <thead><tr><th>№</th><th>Позиция</th><th>Что добавляет</th><th>Стоимость</th></tr></thead>
+    <tbody>
+      <tr class="ri"><td class="n">A</td><td class="nm">Beauty-корнер — экспресс-укладка / лёгкий мейк <span class="hint">в тему студии</span></td><td class="cl">2 мастера, 4 ч</td><td class="pr">30 000 ₽</td></tr>
+      <tr class="ri"><td class="n">B</td><td class="nm">Флористика в тонах студии <span class="hint">сухоцветы · латунь</span></td><td class="cl">welcome + столы + бар</td><td class="pr">45 000 ₽</td></tr>
+      <tr class="ri"><td class="n">C</td><td class="nm">Фотограф-репортаж</td><td class="cl">4 часа</td><td class="pr">35 000 ₽</td></tr>
+      <tr class="ri"><td class="n">D</td><td class="nm">Парфюмерная станция — гость собирает свой мини-аромат</td><td class="cl">парфюмер + флаконы</td><td class="pr">25 000 ₽</td></tr>
+      <tr class="ri"><td class="n">E</td><td class="nm">Каллиграф — открытки с именами гостей тушью</td><td class="cl">1 мастер</td><td class="pr">15 000 ₽</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">Позиции добавляются к смете по выбору. Рекомендованный минимум под концепцию — A + B + C: 596 500 ₽.</p>
+</div></section>
+
+<footer>
+  <div class="footer-logo" id="fl"></div>
+  <div class="fl"></div>
+  <div class="fc">Ивент-агентство <b>НАВСЕГДА</b><br>Денис Коняев<br><a href="tel:+79801821101">+7 (980) 182-11-01</a><br><a href="mailto:kreativedreamz1@gmail.com">kreativedreamz1@gmail.com</a></div>
+  <div class="fnote">Предложение подготовлено для AYVAZZOVSKY STUDIO</div>
+</footer>
+
+<div class="lb" id="lb"><span class="x">&times;</span><span class="nav prev">&#8249;</span><img><span class="nav next">&#8250;</span><span class="cnt"></span></div>
+
+<script>
+fetch('../_assets/logo-navsegda.svg').then(r=>r.text()).then(s=>{
+  s=s.replace(/fill="#FFE7C6"/g,'fill="currentColor"');
+  document.getElementById('tb').innerHTML=s;
+  document.getElementById('fl').innerHTML=s;
+});
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}})},{threshold:.12});
+document.querySelectorAll('.rev').forEach(el=>io.observe(el));
+
+(function(){
+  const figs=[...document.querySelectorAll('#gal figure')];
+  const imgs=figs.map(f=>f.querySelector('img'));
+  if(!imgs.length)return;
+  const lb=document.getElementById('lb'),li=lb.querySelector('img'),lc=lb.querySelector('.cnt');
+  let idx=0;
+  function op(i){idx=(i+imgs.length)%imgs.length;li.src=imgs[idx].src;lc.textContent=(idx+1)+' / '+imgs.length;lb.classList.add('open');}
+  figs.forEach((f,i)=>f.addEventListener('click',()=>op(i)));
+  lb.querySelector('.x').onclick=()=>lb.classList.remove('open');
+  lb.querySelector('.next').onclick=()=>op(idx+1);
+  lb.querySelector('.prev').onclick=()=>op(idx-1);
+  lb.addEventListener('click',e=>{if(e.target===lb)lb.classList.remove('open');});
+  addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')lb.classList.remove('open');if(e.key==='ArrowRight')op(idx+1);if(e.key==='ArrowLeft')op(idx-1);});
+  let sx=0;li.addEventListener('touchstart',e=>{sx=e.changedTouches[0].clientX},{passive:true});
+  li.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>40)op(idx+(d<0?1:-1));},{passive:true});
+})();
+</script>
+<script>
+document.querySelectorAll('.ri.exp').forEach(tr=>{
+  tr.addEventListener('click',()=>{
+    const id=tr.dataset.target;const box=document.getElementById(id);
+    if(!box)return;
+    tr.classList.toggle('open');box.classList.toggle('open');
+  });
+});
+</script>
+</body>
+</html>
