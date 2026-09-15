@@ -105,6 +105,17 @@ section{padding:104px 0;position:relative}
 .idea .no{font-family:'Playfair Display',serif;font-style:italic;font-size:1.6rem;color:var(--gold);line-height:1}
 .idea h4{font-family:'Playfair Display',serif;font-weight:500;font-size:1.25rem;margin:12px 0 8px;color:var(--ink)}
 .idea p{font-size:.92rem;color:var(--muted);font-weight:300}
+/* ESTIMATE */
+.est-card{margin-top:52px;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;box-shadow:0 24px 60px rgba(40,30,15,.10)}
+.est-row{display:flex;justify-content:space-between;align-items:center;gap:24px;padding:22px 32px;border-bottom:1px solid var(--line)}
+.est-row .en b{font-family:'Playfair Display',serif;font-weight:500;font-size:1.08rem;color:var(--ink);display:block}
+.est-row .en small{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:.78rem;color:var(--muted);margin-top:4px;letter-spacing:.02em}
+.est-row .ev{flex:none;font-family:'Cormorant Garamond',serif;font-weight:600;font-size:1.5rem;color:var(--ink);white-space:nowrap}
+.est-total{display:flex;justify-content:space-between;align-items:center;padding:28px 32px;background:var(--espresso);color:#f3ead8}
+.est-total .tl{font-family:'Jost',sans-serif;font-weight:300;letter-spacing:.3em;text-transform:uppercase;font-size:.82rem;color:var(--gold-l)}
+.est-total .tv{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(1.6rem,4vw,2.1rem);color:#f3ead8}
+.est-note{margin-top:20px;text-align:center;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.1rem;color:var(--muted)}
+@media(max-width:600px){.est-row{padding:18px 20px}.est-row .ev{font-size:1.3rem}}
 /* FOOTER */
 footer{background:var(--espresso);color:#efe6d4;text-align:center;padding:100px 26px 70px}
 footer .brand{font-size:clamp(2rem,6vw,3.4rem);color:#f2ead8}
@@ -211,6 +222,37 @@ footer a{color:var(--gold-l);text-decoration:none}
       <img class="ckt-photo b" src="img/totalblonde-glass.jpg" alt="Total Blonde">
     </div>
   </div>
+
+  <!-- Velvet Noir -->
+  <div class="ckt rev2 rev">
+    <div class="ckt-art">
+      <svg viewBox="0 0 200 240" fill="none" stroke="#b28a4c" stroke-width="1.4">
+        <!-- highball body -->
+        <path d="M64 44 h72 v150 q0 12 -12 12 H76 q-12 0 -12 -12 Z" fill="#5a1730" fill-opacity=".85" stroke="#b28a4c"/>
+        <path d="M64 44 h72 v150 q0 12 -12 12 H76 q-12 0 -12 -12 Z" stroke="#b28a4c"/>
+        <!-- gold rim -->
+        <line x1="64" y1="44" x2="136" y2="44" stroke="#caa568" stroke-width="3"/>
+        <!-- ice cube -->
+        <rect x="82" y="70" width="34" height="34" rx="4" fill="#efe6d4" fill-opacity=".18" stroke="#efe6d4" stroke-opacity=".5"/>
+        <!-- gold sprig -->
+        <path d="M92 40 Q100 18 118 24" stroke="#caa568" stroke-width="2"/>
+        <circle cx="100" cy="30" r="3" fill="#caa568" stroke="none"/><circle cx="112" cy="26" r="3" fill="#caa568" stroke="none"/>
+        <!-- callout -->
+        <line x1="136" y1="60" x2="182" y2="46" stroke-width="1"/><circle cx="182" cy="46" r="1.6" fill="#b28a4c" stroke="none"/>
+        <text x="128" y="38" font-family="Jost, sans-serif" font-size="7" fill="#8c7f68" stroke="none">золотой ободок</text>
+      </svg>
+    </div>
+    <div>
+      <div class="ckt-name">Velvet Noir</div>
+      <div class="ckt-ings">чёрная смородина · гибискус · просекко · цедра</div>
+      <p class="ckt-desc">Глубокий ягодный коктейль с золотым ободком и подачей на кристальном льду — тёмный, бархатный акцент сета, который красиво смотрится в руке на любом кадре.</p>
+      <ul class="ckt-notes">
+        <li><span><b>Золотой ободок</b> бокала — премиальная подача</span></li>
+        <li><span><b>Кристальный лёд</b> ручной огранки</span></li>
+        <li><span>Смородина и гибискус с игристой шапкой</span></li>
+      </ul>
+    </div>
+  </div>
 </div></section>
 
 <!-- NITROGEN -->
@@ -273,6 +315,25 @@ footer a{color:var(--gold-l);text-decoration:none}
     <div class="idea rev"><div class="no">03</div><h4>QR-меню коктейлей</h4><p>Элегантная карта на стойке с QR — гость читает состав и сохраняет ваш бренд в телефоне.</p></div>
     <div class="idea rev d1"><div class="no">04</div><h4>Финальный тост</h4><p>Азотное шоу с общим тостом в кульминации вечера — момент, который снимут все и выложат.</p></div>
   </div>
+</div></section>
+
+<!-- ESTIMATE -->
+<section class="est"><div class="wrap">
+  <div class="eyebrow rev">Смета</div>
+  <h2 class="stitle rev">Барный пакет <span class="it">под ключ</span></h2>
+  <span class="hr rev"></span>
+  <div class="est-card rev d1">
+    <div class="est-row"><div class="en"><b>Работа двух барменов</b><small>4 часа на мероприятии + 2 часа подготовки</small></div><div class="ev">30 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Авторские коктейли — 150 порций</b><small>Airtouch · Total Blonde · Velvet Noir — по 50 порций</small></div><div class="ev">70 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Барная стойка</b><small>на выбор — Black Metal / Vintage / Black / White Marble</small></div><div class="ev">25 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Логистика</b><small>доставка, монтаж и демонтаж стойки</small></div><div class="ev">20 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Жидкий азот</b><small>азотное шоу у стойки</small></div><div class="ev">5 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Украшения на коктейли</b><small>съедобный декор, веточки, печать по пене</small></div><div class="ev">10 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Фигурный и классический лёд</b></div><div class="ev">10 000 ₽</div></div>
+    <div class="est-row"><div class="en"><b>Игристое и белое вино</b><small>30 просекко + 30 белое сухое вино</small></div><div class="ev">78 000 ₽</div></div>
+    <div class="est-total"><span class="tl">Итого</span><span class="tv">248 000 ₽</span></div>
+  </div>
+  <div class="est-note rev">Барная стойка входит в пакет — выбирается из четырёх вариантов выше</div>
 </div></section>
 
 <footer>
