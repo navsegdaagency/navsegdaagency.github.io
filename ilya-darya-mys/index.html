@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Илья & Дарья · веранда «Мыс» у воды | НАВСЕГДА</title>
+<meta name="description" content="КП НАВСЕГДА — камерная свадьба Ильи и Дарьи на стеклянной веранде «Мыс» у воды.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500;600&family=Oswald:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --bg:#f3efe8;--fg:#33373a;--muted:#7c8488;--herofg:#ffffff;--herotag:#eaf1f2;
+ --accent:#7fa6a8;--accent-d:#4d7476;--gold:#c7a86a;--card:#fbf9f4;--line:rgba(90,110,110,.18);
+ --heroov:linear-gradient(180deg,rgba(28,38,40,.52),rgba(30,42,44,.28) 42%,rgba(24,34,36,.74));
+ --totbg:linear-gradient(135deg,#4d7476,#33555a);--totfg:#fff;--footbg:linear-gradient(180deg,rgba(26,36,38,.72),rgba(20,30,32,.86))}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:var(--bg);color:var(--fg);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{max-width:100%;display:block}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:'Oswald',sans-serif;font-weight:300;font-size:.68rem;letter-spacing:.34em;text-transform:uppercase;color:var(--accent-d)}
+.stitle{font-family:'Cormorant Garamond',serif;font-weight:500;font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.08;margin-top:10px;color:var(--fg)}
+.sdiv{display:block;width:80px;height:12px;margin:18px 0 0}
+section{padding:88px 0}
+.rev{opacity:0;transform:translateY(24px);transition:opacity .9s ease,transform .9s ease}
+.rev.on{opacity:1;transform:none}
+/* HERO */
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden}
+.hero-bg{position:absolute;inset:0;background:url("img/1.jpg") center/cover no-repeat;transform:scale(1.08)}
+.hero-bg::after{content:"";position:absolute;inset:0;background:var(--heroov)}
+.topbar{position:absolute;top:0;left:0;right:0;z-index:4;display:flex;justify-content:space-between;align-items:center;padding:26px 30px}
+.topbar img{width:118px;opacity:.95}
+.topbar .tb{font-family:'Oswald',sans-serif;font-weight:200;font-size:.62rem;letter-spacing:.34em;text-transform:uppercase;color:var(--herotag)}
+.hero-inner{position:relative;z-index:3;padding:120px 20px 96px;max-width:900px}
+.hero-logo{width:min(210px,54vw);margin:0 auto 26px}
+.names{font-family:'Cormorant Garamond',serif;font-size:clamp(3rem,10vw,6.4rem);font-weight:500;letter-spacing:.02em;line-height:.98;color:var(--herofg)}
+.names .amp{display:block;font-style:italic;font-size:.42em;color:var(--gold);margin:.12em 0;font-weight:400}
+.hero-line{width:1px;height:54px;background:linear-gradient(var(--gold),transparent);margin:30px auto 22px}
+.hero-meta{font-family:'Oswald',sans-serif;font-weight:200;font-size:.86rem;letter-spacing:.32em;text-transform:uppercase;color:var(--herofg)}
+.hero-tag{margin-top:22px;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:clamp(1.05rem,2.4vw,1.5rem);color:var(--herotag)}
+.hero-tag b{color:var(--gold);font-style:normal;font-weight:600}
+.scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:3;color:var(--herotag);font-family:'Oswald',sans-serif;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;opacity:.8}
+.scroll span{display:block;width:1px;height:34px;background:rgba(255,255,255,.6);margin:8px auto 0;animation:sd 1.8s ease-in-out infinite}
+@keyframes sd{0%,100%{transform:scaleY(.4);opacity:.4}50%{transform:scaleY(1);opacity:1}}
+/* CONCEPT */
+.concept{background:var(--card)}
+.lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.3rem,3vw,1.9rem);font-weight:300;line-height:1.5;max-width:840px;margin-top:26px;color:#45494b}
+.lead b{color:var(--accent-d);font-weight:500}
+.trio{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:56px}
+.tcard{border:1px solid var(--line);border-radius:16px;padding:34px 26px;background:#fff;text-align:center}
+.tcard .rn{font-family:'Oswald',sans-serif;font-size:.6rem;letter-spacing:.3em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+.tcard h3{font-family:'Cormorant Garamond',serif;font-size:1.6rem;color:var(--accent-d);margin-bottom:8px}
+.tcard p{font-size:.92rem;color:var(--muted);font-weight:300}
+/* GALLERY */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:178px;gap:12px;margin-top:52px}
+.gal figure{position:relative;overflow:hidden;border-radius:12px;cursor:zoom-in;background:#ddd}
+.gal figure::after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px var(--line);border-radius:12px}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.gal figure:hover img{transform:scale(1.07)}
+.gal .big{grid-column:span 2;grid-row:span 2}.gal .wide{grid-column:span 2}
+/* VENUE */
+.venue{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;margin-top:52px}
+.venue-photo{position:relative;border-radius:16px;overflow:hidden;min-height:440px}
+.venue-photo img{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.venue-photo .frame{position:absolute;inset:14px;border:1px solid rgba(255,255,255,.45);border-radius:9px}
+.feat{list-style:none;display:flex;flex-direction:column;gap:4px}
+.feat li{display:flex;gap:16px;padding:16px 0;border-bottom:1px solid var(--line)}
+.feat .ic{flex:none;width:22px;height:22px;color:var(--accent);margin-top:2px}
+.feat b{display:block;font-weight:500;font-size:1rem;color:var(--fg)}
+.feat span{font-size:.88rem;color:var(--muted);font-weight:300}
+.highlight{margin-top:30px;border:1px solid var(--line);border-radius:14px;padding:22px 24px;background:#fff;font-size:.94rem;color:var(--fg);font-weight:300}
+.highlight b{color:var(--accent-d);font-weight:600}
+/* TIMELINE */
+.tl-sec{background:var(--card)}
+.timeline{margin-top:52px;position:relative;padding-left:26px}
+.timeline::before{content:"";position:absolute;left:6px;top:6px;bottom:6px;width:1px;background:linear-gradient(var(--accent),transparent)}
+.tl{position:relative;padding:0 0 34px 30px}
+.tl::before{content:"";position:absolute;left:-3px;top:6px;width:9px;height:9px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(127,166,168,.18)}
+.tl .t{font-family:'Oswald',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.2em;text-transform:uppercase;color:var(--accent-d)}
+.tl h4{font-family:'Cormorant Garamond',serif;font-size:1.4rem;margin:2px 0 4px}
+.tl p{font-size:.9rem;color:var(--muted);font-weight:300}
+/* EST */
+.est{margin-top:46px;border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#fff}
+.est table{width:100%;border-collapse:collapse}
+.est thead th{font-family:'Oswald',sans-serif;font-weight:300;font-size:.62rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);text-align:left;padding:16px 20px;border-bottom:1px solid var(--line)}
+.est thead th:last-child{text-align:right}
+.rs td{background:#eef3f2;font-family:'Oswald',sans-serif;font-weight:400;font-size:.7rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent-d);padding:12px 20px}
+.ri td{padding:13px 20px;border-bottom:1px solid var(--line);font-size:.92rem}
+.ri .n{color:var(--muted);width:38px}.ri .cl{color:var(--muted);font-size:.82rem}.ri .pr{text-align:right;white-space:nowrap;font-weight:500}
+.rsub td{padding:13px 20px;border-bottom:1px solid var(--line);font-weight:600;font-size:.9rem;background:#faf8f2}
+.rsub .pr{text-align:right}
+.rorg td{padding:14px 20px;color:var(--muted);border-bottom:1px solid var(--line)}.rorg .pr{text-align:right;color:var(--fg)}
+.rtot td{padding:24px 20px;background:var(--totbg);font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:var(--totfg)}
+.rtot .pr{text-align:right}
+.note{margin-top:20px;font-size:.85rem;color:var(--muted);font-weight:300;line-height:1.7}
+/* FOOTER */
+footer{position:relative;margin-top:0;padding:96px 24px 66px;text-align:center;color:#eef3f2;background:var(--footbg),url("img/2.jpg") center/cover fixed}
+.footer-logo{width:150px;margin:0 auto 22px;opacity:.95}
+footer h3{font-family:'Cormorant Garamond',serif;font-weight:400;font-size:clamp(1.6rem,3.4vw,2.3rem)}
+footer p{color:#c8d3d3;font-weight:300;margin-top:10px}
+footer .c{margin-top:26px;font-family:'Oswald',sans-serif;font-weight:200;letter-spacing:.14em;font-size:.86rem}
+footer a{color:var(--gold);text-decoration:none}
+/* LIGHTBOX */
+#lbov{position:fixed;inset:0;background:rgba(18,24,25,.94);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}
+#lbov.on{display:flex}
+#lbov img{max-width:96vw;max-height:92vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+@media(max-width:820px){.trio{grid-template-columns:1fr}.venue{grid-template-columns:1fr;gap:28px}.venue-photo{min-height:320px}.gal{grid-template-columns:1fr 1fr;grid-auto-rows:140px}.est thead th:nth-child(3),.ri .cl{display:none}.rtot td{font-size:1.35rem}footer{background-attachment:scroll}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="hero-bg"></div>
+  <div class="topbar"><img src="img/logo-white.png" alt="НАВСЕГДА"><div class="tb">Коммерческое предложение · 2027</div></div>
+  <div class="hero-inner">
+    <img class="hero-logo" src="img/logo-white.png" alt="НАВСЕГДА">
+    <h1 class="names">Илья<span class="amp">&amp;</span>Дарья</h1>
+    <div class="hero-line"></div>
+    <div class="hero-meta">Веранда «Мыс» · Пироговское · четверг · 30–35 гостей</div>
+    <div class="hero-tag">Камерная свадьба у воды —<br>свет, стекло и только <b>самые близкие</b>.</div>
+  </div>
+  <div class="scroll">листайте<span></span></div>
+</header>
+
+<section class="concept"><div class="wrap">
+  <div class="eyebrow rev">Концепция</div>
+  <h2 class="stitle rev">Тихая вода</h2>
+  <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
+  <p class="lead rev">Всё началось на крыше — с самого красивого «да». Теперь — <b>тихая свадьба у воды</b>: стеклянная веранда, панорама на Пироговское, гости, которые летят к вам со всего мира. Никакой суеты — только свет, вода и лица, ради которых стоит собраться. День, где <b>Илья впервые видит Дарью</b> уже на церемонии.</p>
+  <div class="trio">
+    <div class="tcard rev"><div class="rn">Часть I</div><h3>Утро</h3><p>Сборы невесты за городом, лёгкое и светлое начало под камеру фото и видео.</p></div>
+    <div class="tcard rev"><div class="rn">Часть II</div><h3>Церемония</h3><p>Выездная регистрация у самой воды. Первый взгляд Ильи — здесь, при всех.</p></div>
+    <div class="tcard rev"><div class="rn">Часть III</div><h3>Праздник</h3><p>Банкет на стеклянной веранде, тёплый вечер в кругу родных из разных стран.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow rev">Площадка</div>
+  <h2 class="stitle rev">Веранда «Мыс» · у воды</h2>
+  <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
+  <div class="gal" id="gal">
+    <figure class="big" onclick="lb(this)"><img src="img/4.jpg" alt="Стеклянный павильон «Мыс» снаружи"></figure>
+    <figure onclick="lb(this)"><img src="img/3.jpg" alt="Сладкий стол у стекла"></figure>
+    <figure onclick="lb(this)"><img src="img/5.jpg" alt="Банкет на веранде"></figure>
+    <figure class="wide" onclick="lb(this)"><img src="img/2.jpg" alt="Выездная церемония у воды"></figure>
+    <figure onclick="lb(this)"><img src="img/6.jpg" alt="Интерьер веранды"></figure>
+    <figure onclick="lb(this)"><img src="img/7.jpg" alt="Церемония на пирсе"></figure>
+    <figure class="wide" onclick="lb(this)"><img src="img/1.jpg" alt="Панорамный зал у воды"></figure>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow rev">Что входит</div>
+  <h2 class="stitle rev">Пространство и условия</h2>
+  <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
+  <div class="venue">
+    <div class="venue-photo rev"><img src="img/1.jpg" alt="Веранда «Мыс»"><span class="frame"></span></div>
+    <ul class="feat rev">
+      <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l9 6v12H3V9z"/></svg><div><b>Стеклянная веранда 220 м²</b><span>Панорама на Пироговское, светлое пространство, ~30 км от Москвы</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l9 6v12H3V9z"/></svg><div><b>Выездная регистрация у воды</b><span>Церемония на пирсе, зоны welcome на веранде</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l9 6v12H3V9z"/></svg><div><b>Уже в аренде</b><span>Свет, гирлянды, люстры, 2 плазмы, столы, прозрачные стулья, посуда, скатерти, кондиционер</span></div></li>
+      <li><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3l9 6v12H3V9z"/></svg><div><b>Свой алкоголь</b><span>Без пробкового сбора, графины предоставляют бесплатно</span></div></li>
+    </ul>
+  </div>
+  <div class="highlight rev"><b>Банкет 7 700 ₽/гость</b> · сервис 15% включён в депозит · аренда 105 000 ₽ (четверг). Депозит будни — от 350 000 ₽. Роспись/ЗАГС — отдельным днём, утро невесты — вне площадки.</div>
+</div></section>
+
+<section class="tl-sec"><div class="wrap">
+  <div class="eyebrow rev">Сценарий</div>
+  <h2 class="stitle rev">Как проходит день</h2>
+  <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
+  <div class="timeline">
+    <div class="tl rev"><div class="t">Утро · за городом</div><h4>Сборы невесты</h4><p>Утро Дарьи вне площадки, фото- и видеосъёмка с выезда.</p></div>
+    <div class="tl rev"><div class="t">14:00 · сбор</div><h4>Welcome на веранде</h4><p>Встреча гостей, лёгкий фуршет, вид на воду.</p></div>
+    <div class="tl rev"><div class="t">15:30 · церемония</div><h4>Выездная регистрация</h4><p>Церемония у воды. Первый взгляд Ильи — здесь.</p></div>
+    <div class="tl rev"><div class="t">17:00 · банкет</div><h4>Праздничный ужин</h4><p>Банкет на стеклянной веранде, ведущий, первые танцы.</p></div>
+    <div class="tl rev"><div class="t">Вечер · финал</div><h4>Живой вечер</h4><p>Диджей, тёплый свет, близкие из разных стран до ночи.</p></div>
+  </div>
+</div></section>
+
+<section><div class="wrap">
+  <div class="eyebrow rev">Инвестиция в праздник</div>
+  <h2 class="stitle rev">Смета под ключ</h2>
+  <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
+  <div class="est rev"><table><thead><tr><th>№</th><th>Наименование</th><th>Расчёт</th><th>Стоимость</th></tr></thead><tbody id="estbody"></tbody></table></div>
+  <div class="note rev">Расчёт на 32 гостя (30–35). Спецэффекты — холодные фонтаны, салют, дым — по желанию пары, считаются отдельно. Декор и флористика — после созвона с декоратором. ЗАГС/официальная роспись организуется парой отдельным днём. Дата уточняется.</div>
+</div></section>
+
+<footer>
+  <img class="footer-logo" src="img/logo-white.png" alt="НАВСЕГДА">
+  <h3>Соберём ваш день у воды</h3>
+  <p>Свадебное агентство НАВСЕГДА · Денис Коняев</p>
+  <div class="c">+7 (980) 182-11-01 · <a href="mailto:kreativedreamz1@gmail.com">kreativedreamz1@gmail.com</a></div>
+</footer>
+
+<div id="lbov" onclick="this.classList.remove('on')"><img id="lbimg" src="" alt=""></div>
+
+<script>
+function lb(f){var i=f.querySelector('img');var o=document.getElementById('lbov');document.getElementById('lbimg').src=i.src;o.classList.add('on');}
+document.addEventListener('keydown',function(e){if(e.key==='Escape'){document.getElementById('lbov').classList.remove('on');}});
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el);});
+document.getElementById('estbody').innerHTML="<tr class=\"rs\"><td colspan=\"4\">Площадка и питание</td></tr>\n<tr class=\"ri\"><td class=\"n\">1</td><td class=\"nm\">Аренда веранды «Мыс» 220 м²</td><td class=\"cl\">1 день · чт</td><td class=\"pr\">105 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">2</td><td class=\"nm\">Депозит по меню (мин. будни)</td><td class=\"cl\">7 700/гость + серв. 15%</td><td class=\"pr\">350 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого площадка и питание</td><td class=\"pr\">455 000 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Велком-зона</td></tr>\n<tr class=\"ri\"><td class=\"n\">3</td><td class=\"nm\">Велком-набор</td><td class=\"cl\">уточки, полароид, love-is</td><td class=\"pr\">20 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого велком</td><td class=\"pr\">20 000 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Развлекательная программа</td></tr>\n<tr class=\"ri\"><td class=\"n\">4</td><td class=\"nm\">Ведущий + церемониймейстер + диджей</td><td class=\"cl\">церемония и банкет</td><td class=\"pr\">150 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого программа</td><td class=\"pr\">150 000 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Съёмка</td></tr>\n<tr class=\"ri\"><td class=\"n\">5</td><td class=\"nm\">Видеограф</td><td class=\"cl\">утро (выезд) + мероприятие · 9 000 × 9 ч</td><td class=\"pr\">81 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">6</td><td class=\"nm\">Фотограф</td><td class=\"cl\">утро (выезд) + мероприятие · 9 000 × 9 ч</td><td class=\"pr\">81 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">7</td><td class=\"nm\">Визажист</td><td class=\"cl\">макияж + причёска + примерка</td><td class=\"pr\">32 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого съёмка</td><td class=\"pr\">194 000 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Техническая часть</td></tr>\n<tr class=\"ri\"><td class=\"n\">8</td><td class=\"nm\">Звуковое оборудование</td><td class=\"cl\">комплект</td><td class=\"pr\">50 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">9</td><td class=\"nm\">Плазма 65″ (2 шт)</td><td class=\"cl\">LED-панели</td><td class=\"pr\">30 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого техническая часть</td><td class=\"pr\">80 000 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Дополнительно</td></tr>\n<tr class=\"ri\"><td class=\"n\">10</td><td class=\"nm\">Торт</td><td class=\"cl\">700 × 32</td><td class=\"pr\">22 400 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">11</td><td class=\"nm\">Дегустационный сет</td><td class=\"cl\">1 сет</td><td class=\"pr\">3 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">12</td><td class=\"nm\">Пригласительные</td><td class=\"cl\">сайт-приглашение</td><td class=\"pr\">10 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">13</td><td class=\"nm\">Карта гостей</td><td class=\"cl\">гости из-за рубежа</td><td class=\"pr\">15 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого дополнительно</td><td class=\"pr\">50 400 ₽</td></tr>\n<tr class=\"rs\"><td colspan=\"4\">Команда и логистика</td></tr>\n<tr class=\"ri\"><td class=\"n\">14</td><td class=\"nm\">Координатор</td><td class=\"cl\">1 чел.</td><td class=\"pr\">20 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">15</td><td class=\"nm\">Питание подрядчиков</td><td class=\"cl\">2 000 × 7</td><td class=\"pr\">14 000 ₽</td></tr>\n<tr class=\"ri\"><td class=\"n\">16</td><td class=\"nm\">Трансфер подрядчиков</td><td class=\"cl\">комплект</td><td class=\"pr\">20 000 ₽</td></tr>\n<tr class=\"rsub\"><td colspan=\"3\">Итого команда и логистика</td><td class=\"pr\">54 000 ₽</td></tr>\n<tr class=\"rorg\"><td colspan=\"3\">Итого услуги</td><td class=\"pr\">1 003 400 ₽</td></tr>\n<tr class=\"rorg\"><td colspan=\"3\">Организация мероприятия под ключ (11%)</td><td class=\"pr\">110 374 ₽</td></tr>\n<tr class=\"rtot\"><td colspan=\"3\">ИТОГО</td><td class=\"pr\">1 113 774 ₽</td></tr>";
+</script>
+</body>
+</html>
