@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex,nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+<title>Cocktail Bar · AYVAZZOVSKY STUDIO</title>
+<meta name="description" content="Коктейльный бар на открытие AYVAZZOVSKY STUDIO — авторские коктейли, азотное шоу, black-tie бармены и премиальные барные стойки.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+ --cream:#efe6d4;--cream2:#e7dcc5;--paper:#f5efe1;--ink:#2a231a;--muted:#8c7f68;
+ --gold:#b28a4c;--gold-l:#caa568;--espresso:#1c1710;--line:rgba(120,100,66,.24);
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;pointer-events:none;z-index:999;opacity:.04;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+img{max-width:100%;display:block}
+.wrap{max-width:1140px;margin:0 auto;padding:0 26px}
+.eyebrow{font-family:'Jost',sans-serif;font-weight:300;font-size:.66rem;letter-spacing:.42em;text-transform:uppercase;color:var(--gold)}
+.stitle{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(2rem,5vw,3.4rem);line-height:1.05;margin-top:14px;color:var(--ink)}
+.stitle .it{font-style:italic;font-weight:400;color:var(--gold)}
+.hr{display:block;width:64px;height:1px;background:var(--gold);margin:22px 0 0;position:relative}
+.hr::after{content:"";position:absolute;left:76px;top:-3px;width:7px;height:7px;transform:rotate(45deg);border:1px solid var(--gold)}
+section{padding:104px 0;position:relative}
+.rev{opacity:0;transform:translateY(30px);transition:opacity 1s cubic-bezier(.2,.7,.2,1),transform 1s cubic-bezier(.2,.7,.2,1)}
+.rev.on{opacity:1;transform:none}
+.d1{transition-delay:.12s}.d2{transition-delay:.24s}.d3{transition-delay:.36s}
+/* HERO */
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;position:relative;background:radial-gradient(120% 90% at 50% 0%,#f6f0e2,var(--cream) 60%,var(--cream2))}
+.hero .arch{position:absolute;top:9%;left:50%;transform:translateX(-50%);width:min(560px,86vw);height:70%;border:1px solid var(--gold);border-bottom:none;border-radius:50% 50% 0 0/34% 34% 0 0;opacity:.5}
+.hero-in{position:relative;z-index:2;padding:40px 20px}
+.kicker{font-family:'Jost',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.5em;text-transform:uppercase;color:var(--gold)}
+.brand{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(2.7rem,9vw,6rem);letter-spacing:.12em;line-height:1;margin:20px 0 6px;color:var(--ink)}
+.brand small{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:.28em;letter-spacing:.7em;color:var(--gold);margin-top:14px}
+.hero-line{width:1px;height:52px;background:linear-gradient(var(--gold),transparent);margin:30px auto}
+.hero-when{font-family:'Cormorant Garamond',serif;font-size:clamp(1.4rem,3.4vw,2rem);font-weight:500;color:var(--ink)}
+.hero-when b{color:var(--gold);font-weight:600}
+.hero-where{font-family:'Jost',sans-serif;font-weight:300;font-size:.82rem;letter-spacing:.28em;text-transform:uppercase;color:var(--muted);margin-top:10px}
+.hero-tags{margin-top:36px;font-family:'Jost',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.5em;text-transform:uppercase;color:var(--gold)}
+.scroll{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);z-index:2;font-family:'Jost',sans-serif;font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--muted)}
+.scroll span{display:block;width:1px;height:32px;background:var(--gold);margin:8px auto 0;transform-origin:top;animation:sd 1.8s ease-in-out infinite}
+@keyframes sd{0%,100%{transform:scaleY(.35);opacity:.4}50%{transform:scaleY(1);opacity:1}}
+/* CONCEPT */
+.concept{background:var(--paper);text-align:center}
+.lead{font-family:'Cormorant Garamond',serif;font-size:clamp(1.35rem,3vw,2rem);font-weight:300;line-height:1.55;max-width:820px;margin:30px auto 0;color:#3a3226}
+.lead b{color:var(--gold);font-weight:500}
+.lead .em{font-style:italic}
+/* COCKTAILS */
+.ckt{display:grid;grid-template-columns:1fr 1fr;gap:64px;margin-top:64px;align-items:center}
+.ckt.rev2{margin-top:96px}
+.ckt-art{position:relative;display:flex;align-items:center;justify-content:center;min-height:420px}
+.ckt-art svg{width:min(300px,72%);height:auto;overflow:visible}
+.ckt-photo{position:absolute;width:118px;height:150px;object-fit:cover;border-radius:8px;box-shadow:0 16px 34px rgba(40,30,15,.22);border:2px solid var(--paper)}
+.ckt-photo.a{bottom:6%;left:2%}.ckt-photo.b{bottom:16%;right:0}
+.ckt-name{font-family:'Playfair Display',serif;font-weight:500;font-size:clamp(2rem,4.4vw,3rem);color:var(--ink)}
+.ckt-ings{font-family:'Jost',sans-serif;font-weight:300;font-size:.8rem;letter-spacing:.28em;text-transform:uppercase;color:var(--gold);margin-top:12px}
+.ckt-desc{font-family:'Cormorant Garamond',serif;font-size:1.25rem;font-weight:300;color:#4a4032;margin-top:20px;line-height:1.5}
+.ckt-notes{list-style:none;margin-top:22px;display:flex;flex-direction:column;gap:10px}
+.ckt-notes li{display:flex;gap:12px;align-items:baseline;font-size:.9rem;color:var(--muted);font-weight:300}
+.ckt-notes li::before{content:"";flex:none;width:6px;height:6px;transform:rotate(45deg);border:1px solid var(--gold);position:relative;top:1px}
+.ckt-notes b{color:var(--ink);font-weight:500}
+/* FEATURE (nitrogen) */
+.feature{background:var(--espresso);color:#efe6d4}
+.feature .stitle{color:#f2ead8}.feature .eyebrow{color:var(--gold-l)}
+.feat-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center;margin-top:52px}
+.feat-photo{border-radius:14px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.5)}
+.feat-photo img{width:100%;height:100%;object-fit:cover;transition:transform 1s ease}
+.feat-photo:hover img{transform:scale(1.06)}
+.feature p{font-family:'Cormorant Garamond',serif;font-size:1.4rem;font-weight:300;line-height:1.5;color:#ddd0b6;margin-top:8px}
+.feature .big{font-family:'Playfair Display',serif;font-style:italic;color:var(--gold-l);font-size:2rem;display:block;margin-bottom:12px}
+/* BARTENDERS */
+.bt-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:52px}
+.bt-grid figure{border-radius:14px;overflow:hidden;position:relative;aspect-ratio:3/4;background:#ddd}
+.bt-grid figure:first-child{grid-row:span 1}
+.bt-grid img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15);transition:transform 1s ease}
+.bt-grid figure:hover img{transform:scale(1.05)}
+.bt-cap{position:absolute;left:18px;bottom:16px;color:#fff;font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.3rem;text-shadow:0 2px 12px rgba(0,0,0,.6)}
+/* GLASSWARE */
+.glass{background:var(--paper)}
+.glass-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:56px}
+.glass-card{border:1px solid var(--line);border-radius:14px;padding:30px 18px 24px;text-align:center;background:#fff}
+.glass-card svg{width:70px;height:120px;margin:0 auto;overflow:visible}
+.glass-card h4{font-family:'Playfair Display',serif;font-weight:500;font-size:1.15rem;margin-top:16px;color:var(--ink)}
+.glass-card span{display:block;font-family:'Jost',sans-serif;font-weight:300;font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin-top:6px}
+/* BARS */
+.bars-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:56px}
+.bar{position:relative;border-radius:16px;overflow:hidden;background:var(--espresso);min-height:400px;display:flex;align-items:flex-end;box-shadow:0 20px 50px rgba(40,30,15,.18)}
+.bar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform 1.1s ease}
+.bar:hover img{transform:scale(1.06)}
+.bar::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,16,10,.05) 30%,rgba(20,16,10,.86))}
+.bar-in{position:relative;z-index:2;padding:30px 30px 30px;color:#f3ead8;width:100%}
+.bar-in h3{font-family:'Playfair Display',serif;font-weight:500;font-size:1.7rem;letter-spacing:.04em}
+.bar-in .meta{font-family:'Jost',sans-serif;font-weight:300;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:#d8c9a8;margin-top:8px}
+.bar-in .price{margin-top:16px;display:flex;align-items:baseline;gap:10px;justify-content:space-between;border-top:1px solid rgba(202,165,104,.4);padding-top:14px}
+.bar-in .price .l{font-family:'Jost',sans-serif;font-weight:300;font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:#caa568}
+.bar-in .price .v{font-family:'Cormorant Garamond',serif;font-size:1.7rem;font-weight:600;color:#f3ead8}
+.badge{position:absolute;top:18px;right:18px;z-index:3;font-family:'Jost',sans-serif;font-weight:300;font-size:.58rem;letter-spacing:.24em;text-transform:uppercase;color:#1c1710;background:var(--gold-l);padding:6px 12px;border-radius:30px}
+/* IDEAS */
+.ideas{background:var(--paper)}
+.ideas-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:52px}
+.idea{border:1px solid var(--line);border-radius:14px;padding:30px 26px;background:#fff}
+.idea .no{font-family:'Playfair Display',serif;font-style:italic;font-size:1.6rem;color:var(--gold);line-height:1}
+.idea h4{font-family:'Playfair Display',serif;font-weight:500;font-size:1.25rem;margin:12px 0 8px;color:var(--ink)}
+.idea p{font-size:.92rem;color:var(--muted);font-weight:300}
+/* FOOTER */
+footer{background:var(--espresso);color:#efe6d4;text-align:center;padding:100px 26px 70px}
+footer .brand{font-size:clamp(2rem,6vw,3.4rem);color:#f2ead8}
+footer .brand small{color:var(--gold-l)}
+footer .see{font-family:'Cormorant Garamond',serif;font-style:italic;font-size:1.5rem;color:var(--gold-l);margin-top:14px}
+footer .c{margin-top:30px;font-family:'Jost',sans-serif;font-weight:200;letter-spacing:.16em;font-size:.86rem;color:#cdbf9f}
+footer a{color:var(--gold-l);text-decoration:none}
+@media(max-width:860px){
+ section{padding:76px 0}
+ .ckt,.feat-grid{grid-template-columns:1fr;gap:34px}
+ .ckt-art{min-height:340px;order:-1}
+ .glass-row{grid-template-columns:1fr 1fr}
+ .bars-grid,.ideas-grid,.bt-grid{grid-template-columns:1fr}
+ .bt-grid figure{aspect-ratio:16/10}
+}
+</style>
+</head>
+<body>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="arch"></div>
+  <div class="hero-in">
+    <div class="kicker">Cocktail Bar</div>
+    <h1 class="brand">AYVAZZOVSKY<small>Studio</small></h1>
+    <div class="hero-line"></div>
+    <div class="hero-when">Открытие · <b>22 сентября</b>, 18:00</div>
+    <div class="hero-where">2-я Звенигородская ул., 11 · Москва</div>
+    <div class="hero-tags">Beauty · People · Premium</div>
+  </div>
+  <div class="scroll">листайте<span></span></div>
+</header>
+
+<!-- CONCEPT -->
+<section class="concept"><div class="wrap">
+  <div class="eyebrow rev">Концепция</div>
+  <h2 class="stitle rev">Не просто бар — <span class="it">точка притяжения</span></h2>
+  <p class="lead rev d1">Сет авторских коктейлей, созданный в честь вашего открытия, — это тонкая игра вкусов, вдохновлённая <b>элегантностью</b> и лёгким дыханием шика, придуманная специально для <span class="em">AYVAZZOVSKY&nbsp;Studio</span>. Бар станет не просто частью события — он станет его <b>украшением</b>, точкой притяжения и разговоров.</p>
+</div></section>
+
+<!-- COCKTAILS -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Авторские коктейли</div>
+  <h2 class="stitle rev">Подпись <span class="it">на пене</span></h2>
+  <span class="hr rev"></span>
+
+  <!-- Airtouch -->
+  <div class="ckt rev">
+    <div class="ckt-art">
+      <svg viewBox="0 0 200 240" fill="none" stroke="#b28a4c" stroke-width="1.4">
+        <!-- coupe bowl -->
+        <path d="M40 70 Q100 150 160 70 Z" fill="#c0392b" fill-opacity=".9" stroke="none"/>
+        <path d="M40 70 Q100 150 160 70"/>
+        <!-- foam band with brand -->
+        <rect x="40" y="60" width="120" height="20" rx="3" fill="#efe6d4" stroke="#b28a4c"/>
+        <text x="100" y="74" text-anchor="middle" font-family="Playfair Display, serif" font-size="10" letter-spacing="1.5" fill="#2a231a" stroke="none">AYVAZZOVSKY&#160;STUDIO</text>
+        <line x1="100" y1="150" x2="100" y2="205"/>
+        <path d="M70 220 Q100 210 130 220"/>
+        <!-- callouts -->
+        <line x1="160" y1="64" x2="188" y2="44" stroke-width="1"/><circle cx="188" cy="44" r="1.6" fill="#b28a4c" stroke="none"/>
+        <text x="150" y="38" font-family="Jost, sans-serif" font-size="7" fill="#8c7f68" stroke="none">принтер по пене</text>
+        <line x1="40" y1="78" x2="16" y2="96" stroke-width="1"/>
+        <text x="0" y="108" font-family="Jost, sans-serif" font-size="7" fill="#8c7f68" stroke="none">густая пена</text>
+      </svg>
+      <img class="ckt-photo a" src="img/airtouch-photo.jpg" alt="Airtouch">
+      <img class="ckt-photo b" src="img/airtouch-cake.jpg" alt="Брендинг на пене">
+    </div>
+    <div>
+      <div class="ckt-name">Airtouch</div>
+      <div class="ckt-ings">малиновый рислинг · шисо · капля джина</div>
+      <p class="ckt-desc">Шёлковая пенная шапка, на которую пищевой принтер наносит логотип <b>AYVAZZOVSKY&nbsp;STUDIO</b> — каждый гость получает коктейль с вашей подписью.</p>
+      <ul class="ckt-notes">
+        <li><span><b>Печать по пене</b> — логотип студии прямо на коктейле</span></li>
+        <li><span><b>Густая пена</b> держит форму весь вечер</span></li>
+        <li><span>Малиново-рислинговая база с нотой шисо</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Total Blonde -->
+  <div class="ckt rev2 rev">
+    <div>
+      <div class="ckt-name">Total Blonde</div>
+      <div class="ckt-ings">джин · голубика · галангал · базилик</div>
+      <p class="ckt-desc">Прозрачный коктейль с логотипом <b>«A»</b> на съедобной рисовой бумаге и золотой веточкой эвкалипта — украшение, которое хочется сфотографировать.</p>
+      <ul class="ckt-notes">
+        <li><span><b>Логотип «A»</b> на рисовой пищевой бумаге</span></li>
+        <li><span><b>Золотая веточка</b> эвкалипта</span></li>
+        <li><span>Освежающий джин с голубикой и галангалом</span></li>
+      </ul>
+    </div>
+    <div class="ckt-art">
+      <svg viewBox="0 0 200 240" fill="none" stroke="#b28a4c" stroke-width="1.4">
+        <path d="M55 40 h90 v20 q0 55 -45 62 q-45 -7 -45 -62 Z" fill="#cfe6ea" fill-opacity=".55" stroke="#b28a4c"/>
+        <line x1="100" y1="164" x2="100" y2="206"/><path d="M72 220 Q100 210 128 220"/>
+        <!-- A badge -->
+        <rect x="82" y="86" width="36" height="34" rx="3" fill="#efe6d4" stroke="#b28a4c"/>
+        <text x="100" y="112" text-anchor="middle" font-family="Playfair Display, serif" font-size="24" fill="#2a231a" stroke="none">A</text>
+        <!-- eucalyptus sprig -->
+        <path d="M74 70 Q100 52 128 66" stroke="#caa568" stroke-width="2"/>
+        <circle cx="80" cy="66" r="3" fill="#caa568" stroke="none"/><circle cx="92" cy="60" r="3" fill="#caa568" stroke="none"/><circle cx="106" cy="59" r="3" fill="#caa568" stroke="none"/><circle cx="120" cy="64" r="3" fill="#caa568" stroke="none"/>
+        <line x1="118" y1="120" x2="178" y2="132" stroke-width="1"/>
+        <text x="120" y="146" font-family="Jost, sans-serif" font-size="7" fill="#8c7f68" stroke="none">рисовая бумага</text>
+      </svg>
+      <img class="ckt-photo b" src="img/totalblonde-glass.jpg" alt="Total Blonde">
+    </div>
+  </div>
+</div></section>
+
+<!-- NITROGEN -->
+<section class="feature"><div class="wrap">
+  <div class="eyebrow rev">Шоу у стойки</div>
+  <h2 class="stitle rev">Азотные <span class="it" style="color:var(--gold-l)">коктейли</span></h2>
+  <div class="feat-grid">
+    <div class="feat-photo rev"><img src="img/nitrogen.jpg" alt="Азотные коктейли"></div>
+    <div class="rev d1">
+      <p><span class="big">Дым, который собирает толпу.</span>Жидкий азот превращает подачу в спектакль: клубы холодного тумана, эффектная заморозка на глазах у гостей — момент, ради которого достают телефоны и который расходится по сторис.</p>
+    </div>
+  </div>
+</div></section>
+
+<!-- BARTENDERS -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Команда</div>
+  <h2 class="stitle rev">Bartenders <span class="it">in black-tie</span></h2>
+  <span class="hr rev"></span>
+  <div class="bt-grid">
+    <figure class="rev"><img src="img/bartender1.jpg" alt="Бармен"><figcaption class="bt-cap">За стойкой — в смокинге</figcaption></figure>
+    <figure class="rev d1"><img src="img/bartender2.jpg" alt="Бармены"><figcaption class="bt-cap">The bartenders</figcaption></figure>
+  </div>
+</div></section>
+
+<!-- GLASSWARE -->
+<section class="glass"><div class="wrap">
+  <div class="eyebrow rev">Посуда</div>
+  <h2 class="stitle rev">Хрусталь <span class="it">и линия бокалов</span></h2>
+  <span class="hr rev"></span>
+  <div class="glass-row">
+    <div class="glass-card rev"><svg viewBox="0 0 70 120" fill="none" stroke="#b28a4c" stroke-width="1.3"><path d="M12 18 Q35 70 58 18"/><line x1="35" y1="70" x2="35" y2="104"/><path d="M18 112 Q35 104 52 112"/></svg><h4>Sparkling Wine</h4><span>Coupe</span></div>
+    <div class="glass-card rev d1"><svg viewBox="0 0 70 120" fill="none" stroke="#b28a4c" stroke-width="1.3"><path d="M16 14 Q16 66 35 74 Q54 66 54 14"/><line x1="35" y1="74" x2="35" y2="104"/><path d="M20 112 Q35 104 50 112"/></svg><h4>RONA 480</h4><span>Italian Crystal · White Wine</span></div>
+    <div class="glass-card rev d2"><svg viewBox="0 0 70 120" fill="none" stroke="#b28a4c" stroke-width="1.3"><path d="M20 20 v70 q0 10 15 10 q15 0 15 -10 V20"/></svg><h4>Water Glass</h4><span>Tumbler</span></div>
+    <div class="glass-card rev d3"><svg viewBox="0 0 70 120" fill="none" stroke="#b28a4c" stroke-width="1.3"><path d="M27 14 q0 44 8 60 q8 -16 8 -60Z" stroke="#b28a4c"/><line x1="35" y1="74" x2="35" y2="104"/><path d="M22 112 Q35 104 48 112"/></svg><h4>Champagne Flute</h4><span>Flute</span></div>
+  </div>
+</div></section>
+
+<!-- BARS -->
+<section><div class="wrap">
+  <div class="eyebrow rev">Барные стойки</div>
+  <h2 class="stitle rev">Выберите <span class="it">характер бара</span></h2>
+  <span class="hr rev"></span>
+  <div class="bars-grid">
+    <div class="bar rev"><span class="badge">до 150 гостей</span><img src="img/bar-blackmetal.jpg" alt="Black Metal"><div class="bar-in"><h3>Black Metal</h3><div class="meta">до 150 гостей · до 4 барменов</div><div class="price"><span class="l">Стойка</span><span class="v">25 000 ₽</span></div></div></div>
+    <div class="bar rev d1"><span class="badge">до 100 гостей</span><img src="img/bar-vintage.jpg" alt="Vintage Marble" style="object-position:center"><div class="bar-in"><h3>Vintage Marble</h3><div class="meta">до 100 гостей · до 2 барменов</div><div class="price"><span class="l">Стойка</span><span class="v">25 000 ₽</span></div></div></div>
+    <div class="bar rev"><span class="badge">до 100 гостей</span><img src="img/bar-blackmarble.jpg" alt="Black Marble Bar"><div class="bar-in"><h3>Black Marble Bar</h3><div class="meta">до 100 гостей · до 3 барменов</div><div class="price"><span class="l">Стойка</span><span class="v">25 000 ₽</span></div></div></div>
+    <div class="bar rev d1"><span class="badge">до 100 гостей</span><img src="img/bar-whitemarble.jpg" alt="White Marble Bar"><div class="bar-in"><h3>White Marble Bar</h3><div class="meta">до 100 гостей · до 3 барменов</div><div class="price"><span class="l">Стойка</span><span class="v">25 000 ₽</span></div></div></div>
+  </div>
+</div></section>
+
+<!-- IDEAS -->
+<section class="ideas"><div class="wrap">
+  <div class="eyebrow rev">Как усилить</div>
+  <h2 class="stitle rev">Идеи, чтобы <span class="it">запомнили</span></h2>
+  <span class="hr rev"></span>
+  <div class="ideas-grid">
+    <div class="idea rev"><div class="no">01</div><h4>Welcome с подписью</h4><p>Каждого гостя на входе встречает Airtouch с логотипом AYVAZZOVSKY на пене — брендинг в руках у всех.</p></div>
+    <div class="idea rev d1"><div class="no">02</div><h4>Неоновая вывеска бара</h4><p>Световая надпись «AYVAZZOVSKY» за стойкой — готовая фотозона и фон для каждого кадра вечера.</p></div>
+    <div class="idea rev d2"><div class="no">03</div><h4>Beauty-мокteйли 0%</h4><p>Линейка безалкогольных premium-мокteйлей на травах и цитрусах — под аудиторию бьюти-студии.</p></div>
+    <div class="idea rev"><div class="no">04</div><h4>Брендированный лёд</h4><p>Прозрачные кубы льда с выгравированной «A» и съедобное золото — детали, которые видно в бокале.</p></div>
+    <div class="idea rev d1"><div class="no">05</div><h4>QR-меню коктейлей</h4><p>Элегантная карта на стойке с QR — гость читает состав и сохраняет ваш бренд в телефоне.</p></div>
+    <div class="idea rev d2"><div class="no">06</div><h4>Финальный тост</h4><p>Азотное шоу с общим тостом в кульминации вечера — момент, который снимут все и выложат.</p></div>
+  </div>
+</div></section>
+
+<footer>
+  <h2 class="brand">AYVAZZOVSKY<small>Studio</small></h2>
+  <div class="see">Увидимся на мероприятии</div>
+  <div class="c">Коктейльный бар под ключ · авторские коктейли · азотное шоу · black-tie бармены</div>
+</footer>
+
+<script>
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target);}});},{threshold:.12});
+document.querySelectorAll('.rev').forEach(function(el){io.observe(el);});
+</script>
+</body>
+</html>
