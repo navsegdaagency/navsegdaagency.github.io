@@ -141,7 +141,7 @@ footer{position:relative;z-index:3;margin-top:60px;padding:90px 24px 60px;text-a
   <div class="eyebrow rev">Площадка</div>
   <h2 class="stitle rev">Веранда «Мыс» · у Солнечного берега</h2>
   <svg class="sdiv" viewBox="0 0 80 12"><path d="M0 6 H30 M50 6 H80" stroke="var(--accent)" stroke-width="1"/><path d="M40 1 L45 6 L40 11 L35 6 Z" fill="var(--accent)"/></svg>
-  <div class="gal" id="gal">@GALLERY@</div>
+  <div class="gal" id="gal"><figure class="big" onclick="lb(this)"><img src="img/4.jpg" alt="Веранда «Мыс» снаружи"></figure><figure onclick="lb(this)"><img src="img/3.jpg" alt="Сладкий стол у стекла"></figure><figure onclick="lb(this)"><img src="img/5.jpg" alt="Банкет на веранде"></figure><figure class="wide" onclick="lb(this)"><img src="img/2.jpg" alt="Выездная церемония у воды"></figure><figure onclick="lb(this)"><img src="img/6.jpg" alt="Интерьер веранды"></figure><figure onclick="lb(this)"><img src="img/7.jpg" alt="Церемония на пирсе"></figure><figure class="wide" onclick="lb(this)"><img src="img/1.jpg" alt="Панорамный зал у воды"></figure></div>
 </div></section>
 <section><div class="wrap">
   <div class="eyebrow rev">Что входит</div>
@@ -192,6 +192,6 @@ addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key
 let _sx=0;lbimg.addEventListener('touchstart',e=>{_sx=e.changedTouches[0].clientX},{passive:true});lbimg.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-_sx;if(Math.abs(d)>40)op(idx+(d<0?1:-1));},{passive:true});
 let _gx=0;const _g=document.getElementById('gal');_g.addEventListener('touchstart',e=>{_gx=e.changedTouches[0].clientX},{passive:true});_g.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-_gx;if(Math.abs(d)>50&&!lb.classList.contains('open')){const t=imgs.indexOf(e.target);op((t<0?0:t)+(d<0?1:-1));}},{passive:true});
 </script>
-</body>
+<style>#lbov{position:fixed;inset:0;background:rgba(10,8,6,.94);display:none;align-items:center;justify-content:center;z-index:9999;cursor:zoom-out;padding:20px}#lbov.on{display:flex}#lbov img{max-width:96vw;max-height:92vh;border-radius:10px;box-shadow:0 30px 80px rgba(0,0,0,.6)}</style><div id="lbov" onclick="this.classList.remove('on')"><img id="lbimg" src="" alt=""></div><script>function lb(f){var i=f.querySelector('img');var o=document.getElementById('lbov');document.getElementById('lbimg').src=i.src;o.classList.add('on');}document.addEventListener('keydown',function(e){if(e.key==='Escape'){var o=document.getElementById('lbov');if(o)o.classList.remove('on');}});</script></body>
 </html>
 <script async src="/.netlify/scripts/hud?variant=public" data-nf-variant="public" data-netlify-site-id="1e8899ba-655d-47ba-9a5d-83fddcb5b017" data-app-host="app.netlify.com"></script>
